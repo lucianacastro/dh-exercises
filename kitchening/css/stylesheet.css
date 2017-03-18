@@ -1,0 +1,242 @@
+body {
+	background: url('../images/bg-body.png'); 
+	background-attachment: fixed;
+}
+
+.main-container {
+	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo {
+	position: relative;
+	width: 180px;
+	height: 180px;
+	border: 1px solid black;
+	border-radius: 50%;
+	margin-left: calc(50% - 90px);
+	margin-top: 15px;
+}
+
+.toggle {
+	display: none;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 20px; 
+}
+
+.menu-button {
+	position: relative;
+	float: left;
+	width: calc(100%/6 - 20px*5/6);
+	max-width: 180px;
+	height: 50px;
+	background-color: #302e2e;
+	margin-right: 20px;
+	color: white;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif; 
+	line-height: 50px; 
+	text-transform: uppercase;
+}
+
+.menu-button:nth-child(6) {
+	margin-right: 0;
+}
+
+.gallery-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.img-main {
+	width: 100%;
+	margin-top: 20px;
+}
+
+
+.tout {
+	position: relative;
+	float: left;
+	width: calc(33.33% - 16px);
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+.tout:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+.tout-pic {
+	width: 100%;
+	max-width: 380px;
+}
+
+.title {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+
+.text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	color: grey;
+}
+
+.more-button {
+	width: 80px;
+	height: 25px;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #302e2e;
+	color: white;
+	text-align: center;
+	margin: 10px 0;
+	padding-top: 5px;
+}
+
+
+footer {
+	position: relative;
+	background-color: #cc0c0c;
+	width: 100%;
+	height: 100px;
+	clear: left;
+	margin-top: 30px;
+	border-radius: 15px 15px 0 0;
+}
+
+.foot-button-container {
+	text-align: center;
+	
+
+}
+
+.foot-button {
+	display: inline-block;
+	line-height: 100px;
+}
+
+.foot-button a {
+	display: inline;
+	text-decoration: none;
+	border-right: 1px solid white;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.foot-button:last-child a {
+	border-right: none;
+}
+
+@media (max-width: 768px) {
+	.tout {
+		width: calc(50% - 10px);
+		margin-right: 20px;
+		box-sizing: border-box;
+		}
+
+	.tout:nth-child(3n) {
+		margin-right: 20px;
+		}
+
+	.tout:nth-child(2n) {
+		margin-right: 0;
+		}
+
+	.menu-button {
+		font-size: 9px;
+		}
+	footer {
+		width: 100%;
+		height: 308px;
+		border-radius: 0;
+		}
+
+
+	.foot-button {
+		display: block;
+		line-height: 10px;
+		}
+
+	.foot-button a {
+		display: block;
+		text-decoration: none;
+		border-right: none;
+		border-bottom: 5px solid white;
+		font-size: 14px;
+		padding: 17px;
+		margin-right: 0px;
+		margin-bottom: 3px;
+		}
+
+	.foot-button:last-child a {
+		border-right: none;
+		border-bottom: none;
+		}
+
+}		
+
+
+@media (max-width: 420px) {
+	
+	.toggle {
+		position: relative;
+		display: block;
+		margin-left: calc(50% - 25px);
+		margin-top: 30px;
+		width: 50px;
+		height: 50px;
+		padding: 2px 0;
+		background-color: #302e2e;
+	}
+
+	.toggle li {
+		display: block;
+		width: 80%;
+		height: 3px;
+		margin: 10px auto;
+		background: white;
+		border-radius: 3px;
+
+	}
+
+	.img-main {
+		display: none;
+		}
+
+	.tout {
+		width: calc(100%);
+		}
+
+	.tout-pic {
+		width: 100%;
+		max-width: 100%;
+		}
+
+	.menu-button {
+		position: relative;
+		float: left;
+		width: 100%;
+		max-width: 100%;
+		margin-right: 0px;
+		margin-bottom: 5px;
+		font-size: 12px;
+		}
+
+	.menu-button:nth-child(6) {
+		margin-right: 0;
+	}
+
+}
