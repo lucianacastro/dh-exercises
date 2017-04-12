@@ -1,8 +1,6 @@
-<?php
-$paises = ["Argentina", "Brasil", "España", "Perú", "USA", "Italia", "Canadá", "Rusia", "Bolivia", "Portugal", "Francia", "Japón"];
+<?PHP
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,25 +41,6 @@ $paises = ["Argentina", "Brasil", "España", "Perú", "USA", "Italia", "Canadá"
                     <input type='password' name='password' id='password' maxlength="50" />
                     <div id='register_password_errorloc' class='error' style='clear:both'></div>
                 </div>
-                <?php 
-                if (!isset($_GET["versionCorta"])) {
-                ?>
-                <div class='container' style='height:80px;'>
-                    <label for='password' >Confirmar contaseña*:</label><br/>
-                    <div class='pwdwidgetdiv' id='thepwddiv' ></div>
-                    <input type='password' name='password' id='password' maxlength="50" />
-                    <div id='register_password_errorloc' class='error' style='clear:both'></div>
-                </div>
-                <?}?>
-
-                <div>
-                    <label>Nacionalidad </label>
-                    <select name="nacionalidad">
-                        <? for ($i =0; $i < count($paises); $i++): ?>
-                        <option value="<?= $paises[$i] ?>"><?= $paises[$i] ?></option>
-                        <?endfor?>
-                    </select><br><br>
-                </div>
 
                 <div class='container'>
                     <input type='submit' name='Submit' value='Enviar' />
@@ -73,13 +52,3 @@ $paises = ["Argentina", "Brasil", "España", "Perú", "USA", "Italia", "Canadá"
     </body>
 </html>
 
-
-<?php
-echo "<pre>";
-var_dump($_POST);
-
-//if (count($_POST["name"]<2) {
-  //  echo "Error. Complete su nombre nuevamente";
-//} 
-
-?>
